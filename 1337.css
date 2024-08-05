@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'minecraftia';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Minecraftia'), url(https://fonts.cdnfonts.com/s/31977/Minecraftia.woff) format('woff');
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.topbar, .outer {
+    position: absolute;
+    width: 100%;
+}
+
+.topbar {
+    top: 0;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #1e5799 0, #f300ff 50%, #e0ff00 100%);
+    height: 3px;
+    border-bottom: 1px solid #5e3d5c96;
+}
+.divider {
+    width: 1px;
+    height: 50px; 
+    background-color: rgba(255, 255, 255, 0.527);
+    margin: auto; 
+}
+
+.sparkle-bg {
+    background: url('https://assets.guns.lol/sparkle_pink.gif') no-repeat center center;
+    position: absolute;
+    top: 30%; /* holy fuck i fucking hate this shit UGH */
+    left: -20%;
+    height: 50%;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+
+
+.stuff-title {
+    margin-bottom: 10px;
+    text-align: center; 
+}
+.stuff-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.item i {
+    margin-right: 10px;
+}
+
+.dstat-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+div.smoothie-chart-tooltip {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1em;
+    margin-top: 20px;
+    color: white;
+    font-size: 10px;
+    pointer-events: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+.profile-section, .stuff-section, .dstat-section {
+    flex: 1;
+    flex-basis: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: auto;
+    min-width: 40%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    border: 1px solid white;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    margin-top: -30%;
+    margin-left: 0;
+}
+
+.text1-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.text1-container {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-section {
+    flex-direction: row;
+}
+
+.text1 {
+    font-family: 'minecraftia', sans-serif;
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 41px;
+    position: relative;
+    z-index: 2;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.text2, .text3 {
+    margin: 5px 0;
+    text-align: left;
+}
