@@ -616,6 +616,26 @@ body {
     opacity: 0;
   }
 
+  /* Ensure the html and body elements take full height */
+html, body {
+    height: 100%;  /* Full viewport height */
+    margin: 0;     /* Remove default margin */
+}
+
+/* Apply the background image and ensure it covers the full page */
+body {
+    background-image: url('public/images/your-background.jpg'); /* Adjust this path */
+    background-size: cover;      /* Ensure the image covers the entire viewport */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    background-repeat: no-repeat; /* Ensure the image doesn't repeat */
+}
+
+/* Optional: You can also use a fallback color if the image fails to load */
+body {
+    background-color: #000; /* Black background if image doesn't load */
+}
+
   100% {
     opacity: 1;
   }
