@@ -4,30 +4,8 @@
   font-family: "Whitney", sans-serif;
   transition: width 0.5s ease, height 0.5s ease;
 }
-
-/* Ensure the html and body elements take full height */
-html, body {
-    height: 100%;  /* Full viewport height */
-    margin: 0;     /* Remove default margin */
-}
-
-/* Apply the background image and ensure it covers the full page */
 body {
-    background-image: url('public/images/your-background.jpg'); /* Adjust this path */
-    background-size: cover;      /* Ensure the image covers the entire viewport */
-    background-position: center; /* Center the image */
-    background-attachment: fixed; /* Keeps the background fixed while scrolling */
-    background-repeat: no-repeat; /* Ensure the image doesn't repeat */
-}
-
-/* Optional: You can also use a fallback color if the image fails to load */
-body {
-    background-color: #000; /* Black background if image doesn't load */
-}
-
-
-body {
-  overflow: hidden; /* This disables both horizontal and vertical scrolling */
+  overflow: hidden; 
   padding: 0;
   margin: 0;
 }
@@ -62,7 +40,6 @@ body {
   border-radius: 0px;
 }
 
-/* Disable drag and drop on all elements */
 * {
   -webkit-user-drag: none;
   -khtml-user-drag: none;
@@ -114,7 +91,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("https://i.pinimg.com/originals/9b/fd/68/9bfd687d937f8f625620d0e1349716df.gif");
+  background-image: url("https://cdn.discordapp.com/attachments/1292225265795072072/1322009841665048577/banner.png?ex=676f511c&is=676dff9c&hm=30274346e081ce6609237b16e0bceb20df75e426757404d44761b0f429872189&");
   background-repeat: no-repeat;
   z-index: -1;
   filter: blur(0px);
