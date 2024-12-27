@@ -5,12 +5,6 @@
   transition: width 0.5s ease, height 0.5s ease;
 }
 
-
-body {
-  overflow: hidden; /* This disables both horizontal and vertical scrolling */
-  padding: 0;
-  margin: 0;
-}
 :root {
   --primary-h-top: 0; /* black */
   --primary-s-top: 0%;
@@ -19,7 +13,7 @@ body {
   --primary-s-bottom: 0%;
   --primary-l-bottom: 0%;
   --text-color: #fff;
-  --box-shadow-color: rgb(58, 58, 58);
+  --box-shadow-color: rgb(255, 255, 255);
 }
 
 /* ... (rest of the code remains the same) */
@@ -30,7 +24,7 @@ body {
   height: auto;
   scrollbar-width: thin;
   /* scrollbar-gutter: unset; */
-  border-radius: 20%;
+  border-radius: 50%;
 }
 
 ::-webkit-scrollbar-track {
@@ -39,7 +33,7 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background-color: hsl(var(--primary-h-top), 45%, 50%, 0.1);
-  border-radius: 0px;
+  border-radius: 10px;
 }
 
 /* Disable drag and drop on all elements */
@@ -55,7 +49,7 @@ html {
 }
 
 img {
-  opacity: 1;
+  opacity: 0;
   animation: fadeIn 1s ease-in forwards;
 }
 
@@ -89,15 +83,15 @@ body {
 .container::before {
   content: "";
   position: fixed;
-  margin: -1px;
+  margin: -15px;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("https://i.pinimg.com/originals/9b/fd/68/9bfd687d937f8f625620d0e1349716df.gif");
+  background-image: url("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXU4ZWdrNXJlemU5ZjVzdjB6dm1pc2Q3ZTFtN283MXBha3ptZm4wbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4eb1MQjJ6IhWueMb0x/giphy.gif");
   background-repeat: no-repeat;
   z-index: -1;
-  filter: blur(0px);
+  filter: blur(5px);
   /* make img darker */
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: darken;
@@ -107,7 +101,7 @@ body {
 }
 
 .profile-border {
-  box-shadow: 5px 5px 15px rgba(196, 194, 194, 0.1);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
   padding: 5px;
   position: relative;
   display: flex;
@@ -168,7 +162,7 @@ body {
   height: 120px;
   border-radius: 50%;
   padding: 8px;
-  background-color: hsl(0, 0%, 0%);
+  background-color: hsl(0, 100%, 50%);
   --primary-s-top: 42%;
   --primary-l-top: 95%;
   --primary-s-bottom: 44%;
@@ -259,7 +253,7 @@ body {
   top: -77px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #ffffff;
+  background-color: #111214;
   color: #fff;
   padding: 10px;
   border-radius: 5px;
@@ -549,7 +543,7 @@ body {
 
 @media (width <=640px) {
   .container::before {
-    background-image: url("https://i.pinimg.com/originals/da/67/e4/da67e48ade5203b5fe4aa186cc388ac4.gif");
+    background-image: url("https://i.pinimg.com/originals/8e/38/0b/8e380b220945d09c6faa0de34ccaf587.gif");
     margin: -2px;
     filter: blur(2px);
     background-color: rgba(0, 0, 0, 0.5);
