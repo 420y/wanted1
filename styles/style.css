@@ -94,7 +94,7 @@ body {
   background-image: url("https://cdn.discordapp.com/attachments/1292225265795072072/1322009841665048577/banner.png?ex=676f511c&is=676dff9c&hm=30274346e081ce6609237b16e0bceb20df75e426757404d44761b0f429872189&");
   background-repeat: no-repeat;
   z-index: -1;
-  filter: blur(0px);
+  filter: blur(2px);
   /* make img darker */
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: darken;
