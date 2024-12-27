@@ -21,67 +21,58 @@
        
       
 
-        /* Role Styling */
-        .roles-body {
-            margin-top: 10px;
+      html,
+        body {
+            cursor: url('./public/cursor.png'), auto;
+            height: 100%;
+            margin: 0;
         }
 
-        .rol {
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .click-effect {
+            position: absolute;
+            background-color: #000000;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            animation: ripple 0.6s linear;
+            transform: scale(0);
+        }
+
+        @keyframes ripple {
+            to {
+                transform: scale(4);
+                opacity: 0;
+            }
+        }
+
+        /* Text display and controls */
+        .controls {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 100;
             display: flex;
             align-items: center;
-            margin: 5px 0;
+            margin: 0 20px;
         }
 
-        .rol i {
+        .status-text,
+        .track-title {
+            font-size: 18px;
+            color: #333;
+            margin-right: 20px;
+        }
+
+        /* Volume slider */
+        .volume-control {
+            width: 200px;
             margin-right: 10px;
-        }
-
-        /* Role Color Styling */
-        .red {
-            color: rgb(255, 255, 255);
-        }
-
-        .white {
-            color: white;
-        }
-
-        .black {
-            color: rgb(255, 255, 255);
-        }
-
-        /* Optional: Styling adjustments */
-        .container {
-            padding: 20px;
-        }
-
-        /* Social Network Styles */
-        .socials .column {
-            display: flex;
-            gap: 14px;
-            justify-content: space-around;
-        }
-
-        .platform {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-
-        .platform-icon {
-            width: 24px;
-            height: 24px;
-        }
-
-        .social-divider {
-            margin-top: 20px;
-        }
-
-        .text-base {
-            color: white;
-        }
-
-        .platform-username {
-            font-size: 15px;
         }
     </style>
 </head>
